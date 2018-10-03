@@ -5,7 +5,7 @@ Palindrome problem
 Assume valid words are available in a dictionary.
 https://github.com/tmobil/palindrome/blob/master/english.json
 
-Given valid words from the dictionary, find all pairs of the two valid words can be joined to form a palindrome.
+Given valid words from the dictionary, find pairs of valid words can be joined to form a palindrome.
 
 For example, the output should contain the following pairs.
 
