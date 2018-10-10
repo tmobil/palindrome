@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE48FDFB216DE45A00535CC4 /* WordsPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE48FDFA216DE45A00535CC4 /* WordsPair.swift */; };
+		BE48FDFD216E04A600535CC4 /* WordPairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE48FDFC216E04A600535CC4 /* WordPairTests.swift */; };
+		BED6AB24216B51220088D5E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED6AB23216B51220088D5E3 /* AppDelegate.swift */; };
+		BED6AB26216B51220088D5E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED6AB25216B51220088D5E3 /* ViewController.swift */; };
+		BED6AB29216B51220088D5E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED6AB27216B51220088D5E3 /* Main.storyboard */; };
+		BED6AB2B216B51240088D5E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED6AB2A216B51240088D5E3 /* Assets.xcassets */; };
+		BED6AB2E216B51240088D5E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED6AB2C216B51240088D5E3 /* LaunchScreen.storyboard */; };
+		BED6AB45216B548A0088D5E3 /* english.json in Resources */ = {isa = PBXBuildFile; fileRef = BED6AB44216B548A0088D5E3 /* english.json */; };
+		BED6AB4A216B67020088D5E3 /* LetterNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED6AB49216B67020088D5E3 /* LetterNode.swift */; };
+		BED6AB54216B82630088D5E3 /* LetterNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED6AB53216B82630088D5E3 /* LetterNodeTests.swift */; };
+		BED6AB58216B866D0088D5E3 /* WordsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED6AB57216B866D0088D5E3 /* WordsProvider.swift */; };
+		BED6AB5B216B8D3A0088D5E3 /* PalindromFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED6AB5A216B8D3A0088D5E3 /* PalindromFinder.swift */; };
+		BED6AB62216B92330088D5E3 /* PalindromFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED6AB60216B92330088D5E3 /* PalindromFinderTests.swift */; };
+		BED6AB6C216CA5AC0088D5E3 /* String+PalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED6AB6B216CA5AB0088D5E3 /* String+PalindromeTests.swift */; };
+		BED6AB6E216CA5B00088D5E3 /* String+Palindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED6AB6D216CA5B00088D5E3 /* String+Palindrome.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BED6AB35216B51240088D5E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BED6AB18216B51220088D5E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BED6AB1F216B51220088D5E3;
+			remoteInfo = palindrome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE48FDFA216DE45A00535CC4 /* WordsPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsPair.swift; sourceTree = "<group>"; };
+		BE48FDFC216E04A600535CC4 /* WordPairTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordPairTests.swift; sourceTree = "<group>"; };
+		BED6AB20216B51220088D5E3 /* palindrome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = palindrome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED6AB23216B51220088D5E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BED6AB25216B51220088D5E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BED6AB28216B51220088D5E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BED6AB2A216B51240088D5E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BED6AB2D216B51240088D5E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BED6AB2F216B51240088D5E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BED6AB34216B51240088D5E3 /* palindromeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = palindromeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED6AB3A216B51240088D5E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BED6AB44216B548A0088D5E3 /* english.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = english.json; sourceTree = "<group>"; };
+		BED6AB49216B67020088D5E3 /* LetterNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterNode.swift; sourceTree = "<group>"; };
+		BED6AB53216B82630088D5E3 /* LetterNodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterNodeTests.swift; sourceTree = "<group>"; };
+		BED6AB57216B866D0088D5E3 /* WordsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsProvider.swift; sourceTree = "<group>"; };
+		BED6AB5A216B8D3A0088D5E3 /* PalindromFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromFinder.swift; sourceTree = "<group>"; };
+		BED6AB60216B92330088D5E3 /* PalindromFinderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalindromFinderTests.swift; sourceTree = "<group>"; };
+		BED6AB6B216CA5AB0088D5E3 /* String+PalindromeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+PalindromeTests.swift"; sourceTree = "<group>"; };
+		BED6AB6D216CA5B00088D5E3 /* String+Palindrome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Palindrome.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BED6AB1D216B51220088D5E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED6AB31216B51240088D5E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BED6AB17216B51220088D5E3 = {
+			isa = PBXGroup;
+			children = (
+				BED6AB22216B51220088D5E3 /* palindrome */,
+				BED6AB37216B51240088D5E3 /* palindromeTests */,
+				BED6AB21216B51220088D5E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BED6AB21216B51220088D5E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BED6AB20216B51220088D5E3 /* palindrome.app */,
+				BED6AB34216B51240088D5E3 /* palindromeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BED6AB22216B51220088D5E3 /* palindrome */ = {
+			isa = PBXGroup;
+			children = (
+				BED6AB44216B548A0088D5E3 /* english.json */,
+				BED6AB43216B54040088D5E3 /* model */,
+				BED6AB23216B51220088D5E3 /* AppDelegate.swift */,
+				BED6AB25216B51220088D5E3 /* ViewController.swift */,
+				BED6AB27216B51220088D5E3 /* Main.storyboard */,
+				BED6AB2A216B51240088D5E3 /* Assets.xcassets */,
+				BED6AB2C216B51240088D5E3 /* LaunchScreen.storyboard */,
+				BED6AB2F216B51240088D5E3 /* Info.plist */,
+			);
+			path = palindrome;
+			sourceTree = "<group>";
+		};
+		BED6AB37216B51240088D5E3 /* palindromeTests */ = {
+			isa = PBXGroup;
+			children = (
+				BED6AB4F216B7EAA0088D5E3 /* model */,
+				BED6AB3A216B51240088D5E3 /* Info.plist */,
+			);
+			path = palindromeTests;
+			sourceTree = "<group>";
+		};
+		BED6AB43216B54040088D5E3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BE48FDFA216DE45A00535CC4 /* WordsPair.swift */,
+				BED6AB57216B866D0088D5E3 /* WordsProvider.swift */,
+				BED6AB59216B8D1A0088D5E3 /* PalindromFinder */,
+				BED6AB48216B63FB0088D5E3 /* WordsDatabase */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BED6AB48216B63FB0088D5E3 /* WordsDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				BED6AB49216B67020088D5E3 /* LetterNode.swift */,
+			);
+			path = WordsDatabase;
+			sourceTree = "<group>";
+		};
+		BED6AB4F216B7EAA0088D5E3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BE48FDFC216E04A600535CC4 /* WordPairTests.swift */,
+				BED6AB5E216B92330088D5E3 /* PalindromFinder */,
+				BED6AB50216B7EAA0088D5E3 /* WordsDatabase */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BED6AB50216B7EAA0088D5E3 /* WordsDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				BED6AB53216B82630088D5E3 /* LetterNodeTests.swift */,
+			);
+			path = WordsDatabase;
+			sourceTree = "<group>";
+		};
+		BED6AB59216B8D1A0088D5E3 /* PalindromFinder */ = {
+			isa = PBXGroup;
+			children = (
+				BED6AB6D216CA5B00088D5E3 /* String+Palindrome.swift */,
+				BED6AB5A216B8D3A0088D5E3 /* PalindromFinder.swift */,
+			);
+			name = PalindromFinder;
+			path = palindrome/model/PalindromFinder;
+			sourceTree = SOURCE_ROOT;
+		};
+		BED6AB5E216B92330088D5E3 /* PalindromFinder */ = {
+			isa = PBXGroup;
+			children = (
+				BED6AB6B216CA5AB0088D5E3 /* String+PalindromeTests.swift */,
+				BED6AB60216B92330088D5E3 /* PalindromFinderTests.swift */,
+			);
+			path = PalindromFinder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BED6AB1F216B51220088D5E3 /* palindrome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BED6AB3D216B51240088D5E3 /* Build configuration list for PBXNativeTarget "palindrome" */;
+			buildPhases = (
+				BED6AB1C216B51220088D5E3 /* Sources */,
+				BED6AB1D216B51220088D5E3 /* Frameworks */,
+				BED6AB1E216B51220088D5E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = palindrome;
+			productName = palindrome;
+			productReference = BED6AB20216B51220088D5E3 /* palindrome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BED6AB33216B51240088D5E3 /* palindromeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BED6AB40216B51240088D5E3 /* Build configuration list for PBXNativeTarget "palindromeTests" */;
+			buildPhases = (
+				BED6AB30216B51240088D5E3 /* Sources */,
+				BED6AB31216B51240088D5E3 /* Frameworks */,
+				BED6AB32216B51240088D5E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BED6AB36216B51240088D5E3 /* PBXTargetDependency */,
+			);
+			name = palindromeTests;
+			productName = palindromeTests;
+			productReference = BED6AB34216B51240088D5E3 /* palindromeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BED6AB18216B51220088D5E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Wojtek Chmielewski";
+				TargetAttributes = {
+					BED6AB1F216B51220088D5E3 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					BED6AB33216B51240088D5E3 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = BED6AB1F216B51220088D5E3;
+					};
+				};
+			};
+			buildConfigurationList = BED6AB1B216B51220088D5E3 /* Build configuration list for PBXProject "palindrome" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BED6AB17216B51220088D5E3;
+			productRefGroup = BED6AB21216B51220088D5E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BED6AB1F216B51220088D5E3 /* palindrome */,
+				BED6AB33216B51240088D5E3 /* palindromeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BED6AB1E216B51220088D5E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED6AB2E216B51240088D5E3 /* LaunchScreen.storyboard in Resources */,
+				BED6AB2B216B51240088D5E3 /* Assets.xcassets in Resources */,
+				BED6AB45216B548A0088D5E3 /* english.json in Resources */,
+				BED6AB29216B51220088D5E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED6AB32216B51240088D5E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BED6AB1C216B51220088D5E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED6AB58216B866D0088D5E3 /* WordsProvider.swift in Sources */,
+				BED6AB5B216B8D3A0088D5E3 /* PalindromFinder.swift in Sources */,
+				BED6AB26216B51220088D5E3 /* ViewController.swift in Sources */,
+				BED6AB4A216B67020088D5E3 /* LetterNode.swift in Sources */,
+				BE48FDFB216DE45A00535CC4 /* WordsPair.swift in Sources */,
+				BED6AB24216B51220088D5E3 /* AppDelegate.swift in Sources */,
+				BED6AB6E216CA5B00088D5E3 /* String+Palindrome.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED6AB30216B51240088D5E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED6AB62216B92330088D5E3 /* PalindromFinderTests.swift in Sources */,
+				BE48FDFD216E04A600535CC4 /* WordPairTests.swift in Sources */,
+				BED6AB54216B82630088D5E3 /* LetterNodeTests.swift in Sources */,
+				BED6AB6C216CA5AC0088D5E3 /* String+PalindromeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BED6AB36216B51240088D5E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BED6AB1F216B51220088D5E3 /* palindrome */;
+			targetProxy = BED6AB35216B51240088D5E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BED6AB27216B51220088D5E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BED6AB28216B51220088D5E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BED6AB2C216B51240088D5E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BED6AB2D216B51240088D5E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BED6AB3B216B51240088D5E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BED6AB3C216B51240088D5E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BED6AB3E216B51240088D5E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = palindrome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wojtas.palindrome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BED6AB3F216B51240088D5E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = palindrome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wojtas.palindrome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BED6AB41216B51240088D5E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = palindromeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wojtas.palindromeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/palindrome.app/palindrome";
+			};
+			name = Debug;
+		};
+		BED6AB42216B51240088D5E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = palindromeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wojtas.palindromeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/palindrome.app/palindrome";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BED6AB1B216B51220088D5E3 /* Build configuration list for PBXProject "palindrome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED6AB3B216B51240088D5E3 /* Debug */,
+				BED6AB3C216B51240088D5E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BED6AB3D216B51240088D5E3 /* Build configuration list for PBXNativeTarget "palindrome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED6AB3E216B51240088D5E3 /* Debug */,
+				BED6AB3F216B51240088D5E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BED6AB40216B51240088D5E3 /* Build configuration list for PBXNativeTarget "palindromeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED6AB41216B51240088D5E3 /* Debug */,
+				BED6AB42216B51240088D5E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BED6AB18216B51220088D5E3 /* Project object */;
+}
